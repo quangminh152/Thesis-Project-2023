@@ -1,0 +1,20 @@
+{
+  "name": "learning-management-system-for-it-department",
+  "version": "0.0.0",
+  "license": "MIT",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "start:client": "pnpm nx run frontend-lms:dev",
+    "start:server": "pnpm nx run server-lms:build && pnpm nx run server-lms:dev",
+    "start:crawler": "pnpm nx run crawler:dev"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nrwl/nx-cloud": "15.0.2",
+    "nx": "15.4.0",
+    "prettier": "^2.6.2"
+  }
+}
